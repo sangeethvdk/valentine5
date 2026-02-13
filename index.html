@@ -27,12 +27,26 @@
 
 <!-- PAGE 2 -->
 <section id="page2" class="page">
+
     <h1 class="neon-small">Happy Valentine's Day</h1>
     <h2 class="hand-font small">Bobby</h2>
 
-    <p id="loveText" class="love-text"></p>
+    <!-- VIDEO BETWEEN BOBBY & BUTTON -->
+    <div class="video-container">
+        <video id="loveVideo" muted>
+            <source src="love.mp4" type="video/mp4">
+        </video>
 
-    <button onclick="goToPage(3)" class="btn">Continue Our Journey ❤️</button>
+        <div class="video-controls">
+            <button onclick="playVideo()">▶ Play</button>
+            <button onclick="pauseVideo()">⏸ Pause</button>
+        </div>
+    </div>
+
+    <button onclick="goToPage(3)" class="btn">
+        Continue Our Journey ❤️
+    </button>
+
 </section>
 
 <!-- PAGE 3 -->
@@ -55,16 +69,16 @@
         </div>
 
         <div class="gallery">
-            <div class="photo"><img src="img1.jpg" onclick="openImage(0)"><p>The day everything started ❤️</p></div>
-            <div class="photo"><img src="img2.jpg" onclick="openImage(1)"><p>Your smile changed my world 💕</p></div>
-            <div class="photo"><img src="img3.jpg" onclick="openImage(2)"><p>Every moment feels magical ✨</p></div>
-            <div class="photo"><img src="img4.jpg" onclick="openImage(3)"><p>Holding your hand feels like home 🤍</p></div>
-            <div class="photo"><img src="img5.jpg" onclick="openImage(4)"><p>Three years of beautiful memories 💖</p></div>
-            <div class="photo"><img src="img6.jpg" onclick="openImage(5)"><p>Your laugh is my favorite sound 🎶</p></div>
-            <div class="photo"><img src="img7.jpg" onclick="openImage(6)"><p>You are my safe place 🌸</p></div>
-            <div class="photo"><img src="img8.jpg" onclick="openImage(7)"><p>Every journey with you is special 🚗</p></div>
-            <div class="photo"><img src="img9.jpg" onclick="openImage(8)"><p>Forever starts with you 💍</p></div>
-            <div class="photo"><img src="img10.jpg" onclick="openImage(9)"><p>Still choosing you every single day ❤️</p></div>
+            <div class="photo"><img src="img1.jpg" onclick="openImage(0)"><p>Memory 1 ❤️</p></div>
+            <div class="photo"><img src="img2.jpg" onclick="openImage(1)"><p>Memory 2 💕</p></div>
+            <div class="photo"><img src="img3.jpg" onclick="openImage(2)"><p>Memory 3 ✨</p></div>
+            <div class="photo"><img src="img4.jpg" onclick="openImage(3)"><p>Memory 4 🤍</p></div>
+            <div class="photo"><img src="img5.jpg" onclick="openImage(4)"><p>Memory 5 💖</p></div>
+            <div class="photo"><img src="img6.jpg" onclick="openImage(5)"><p>Memory 6 🎶</p></div>
+            <div class="photo"><img src="img7.jpg" onclick="openImage(6)"><p>Memory 7 🌸</p></div>
+            <div class="photo"><img src="img8.jpg" onclick="openImage(7)"><p>Memory 8 🚗</p></div>
+            <div class="photo"><img src="img9.jpg" onclick="openImage(8)"><p>Memory 9 💍</p></div>
+            <div class="photo"><img src="img10.jpg" onclick="openImage(9)"><p>Memory 10 ❤️</p></div>
         </div>
 
         <p class="final">Forever your Bobby ❤️</p>
