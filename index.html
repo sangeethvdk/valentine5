@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Happy Valentine's Day ❤️</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<audio id="bgMusic" loop>
+    <source src="music.mp3" type="audio/mp3">
+</audio>
+
+<div class="hearts"></div>
+
+<!-- PAGE 1 -->
+<section id="page1" class="page active">
+    <img src="bg1.jpg" class="bg-image">
+
+    <div class="content">
+        <h1 class="neon-title">Happy Valentine's Day</h1>
+        <h2 class="hand-font">Bobby</h2>
+        <p class="soft-text">It's for you</p>
+        <button onclick="goToPage(2)" class="btn">Click Here 💌</button>
+    </div>
+</section>
+
+<!-- PAGE 2 -->
+<section id="page2" class="page">
+    <h1 class="neon-small">Happy Valentine's Day</h1>
+    <h2 class="hand-font small">Bobby</h2>
+
+    <p id="loveText" class="love-text"></p>
+
+    <button onclick="goToPage(3)" class="btn">Continue Our Journey ❤️</button>
+</section>
+
+<!-- PAGE 3 -->
+<section id="page3" class="page slideshow-page">
+
+    <div class="slideshow">
+        <div class="slide active"></div>
+        <div class="slide"></div>
+        <div class="slide"></div>
+    </div>
+
+    <div class="slideshow-content">
+
+        <button onclick="goToPage(2)" class="back-btn">⬅ Back</button>
+
+        <h1 class="journey">Three Years of Our Journey</h1>
+
+        <div class="counter">
+            Together for: <span id="loveCounter"></span>
+        </div>
+
+        <div class="gallery">
+            <div class="photo"><img src="img1.jpg" onclick="openImage(0)"><p>The day everything started ❤️</p></div>
+            <div class="photo"><img src="img2.jpg" onclick="openImage(1)"><p>Your smile changed my world 💕</p></div>
+            <div class="photo"><img src="img3.jpg" onclick="openImage(2)"><p>Every moment feels magical ✨</p></div>
+            <div class="photo"><img src="img4.jpg" onclick="openImage(3)"><p>Holding your hand feels like home 🤍</p></div>
+            <div class="photo"><img src="img5.jpg" onclick="openImage(4)"><p>Three years of beautiful memories 💖</p></div>
+            <div class="photo"><img src="img6.jpg" onclick="openImage(5)"><p>Your laugh is my favorite sound 🎶</p></div>
+            <div class="photo"><img src="img7.jpg" onclick="openImage(6)"><p>You are my safe place 🌸</p></div>
+            <div class="photo"><img src="img8.jpg" onclick="openImage(7)"><p>Every journey with you is special 🚗</p></div>
+            <div class="photo"><img src="img9.jpg" onclick="openImage(8)"><p>Forever starts with you 💍</p></div>
+            <div class="photo"><img src="img10.jpg" onclick="openImage(9)"><p>Still choosing you every single day ❤️</p></div>
+        </div>
+
+        <p class="final">Forever your Bobby ❤️</p>
+    </div>
+
+    <div id="finalReveal" class="final-reveal">
+        I Love You Bobby ❤️
+    </div>
+
+</section>
+
+<!-- IMAGE MODAL -->
+<div id="imageModal" class="image-modal">
+    <span class="close-btn" onclick="closeImage()">×</span>
+    <button class="nav prev" onclick="changeImage(-1)">❮</button>
+    <img id="modalImage">
+    <button class="nav next" onclick="changeImage(1)">❯</button>
+    <p id="modalCaption"></p>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
