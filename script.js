@@ -7,16 +7,9 @@ const images = [
 ];
 
 const captions = [
-"The day everything started ❤️",
-"Your smile changed my world 💕",
-"Every moment feels magical ✨",
-"Holding your hand feels like home 🤍",
-"Three years of beautiful memories 💖",
-"Your laugh is my favorite sound 🎶",
-"You are my safe place 🌸",
-"Every journey with you is special 🚗",
-"Forever starts with you 💍",
-"Still choosing you every single day ❤️"
+"Memory 1 ❤️","Memory 2 💕","Memory 3 ✨","Memory 4 🤍",
+"Memory 5 💖","Memory 6 🎶","Memory 7 🌸",
+"Memory 8 🚗","Memory 9 💍","Memory 10 ❤️"
 ];
 
 function goToPage(num){
@@ -41,6 +34,13 @@ document.getElementById("finalReveal").classList.add("show");
 }
 }
 
+function playVideo(){
+document.getElementById("loveVideo").play();
+}
+function pauseVideo(){
+document.getElementById("loveVideo").pause();
+}
+
 function openImage(index){
 currentImageIndex=index;
 document.getElementById("imageModal").style.display="block";
@@ -58,3 +58,15 @@ openImage(currentImageIndex);
 function closeImage(){
 document.getElementById("imageModal").style.display="none";
 }
+
+// Counter
+const startDate = new Date("2022-09-13");
+setInterval(()=>{
+const now=new Date();
+const diff=now-startDate;
+const days=Math.floor(diff/(1000*60*60*24));
+const hours=Math.floor((diff/(1000*60*60))%24);
+const minutes=Math.floor((diff/(1000*60))%60);
+document.getElementById("loveCounter").innerText=
+days+" Days "+hours+" Hours "+minutes+" Minutes ❤️";
+},1000);
